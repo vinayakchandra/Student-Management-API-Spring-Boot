@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <link rel="stylesheet" type="text/css" href="grades.css">
+</head>
+
+
+<body>
+
+    <div class="header">
+        <h1>Student Grades</h1>
+    </div>
+
+    <div class="student-info">
+        <div>
+            <h2>Student Name: Krish</h2>
+            <h3>RA Number: RA2311003010312</h3>
+            <h3>Section: F1</h3>
+        </div>
+        <div>
+            <h3>Faculty Advisor: Dr. P. Rama</h3>
+            <h3>Credits Earned [Grades]: 500</h3>
+            <h3>Current GPA: 9.4</h3>
+        </div>
+    </div>
+
+    <!-- Semester I Section -->
+    <div class="semester-section">
+        <div class="semester-header" onclick="toggleSemester('semester1')">
+            <span>Semester I</span>
+            <span>GPA: 9.2</span>
+        </div>
+        <div id="semester1" class="semester-content hidden">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Grade</th>
+                        <th>Credits</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Constitution of India</td>
+                        <td>A</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Communicative English</td>
+                        <td>A</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Calculus & Linear Algebra</td>
+                        <td>A</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Semiconductor Physics & Computational Methods</td>
+                        <td>A+</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Electrical & Electronics Engineering</td>
+                        <td>A</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Programming for Problem solving</td>
+                        <td>A</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Environment Science</td>
+                        <td>A</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Engineering Graphics and Design</td>
+                        <td>A</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Professional Skills and Practices</td>
+                        <td>A</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Semester II Section -->
+    <div class="semester-section">
+        <div class="semester-header" onclick="toggleSemester('semester2')">
+            <span>Semester II</span>
+            <span>GPA: 9.4</span>
+        </div>
+        <div id="semester2" class="semester-content hidden">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Grade</th>
+                        <th>Credits</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Japanese</td>
+                        <td>A</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Advanced Calculus and Complex Analysis</td>
+                        <td>A</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Chemistry</td>
+                        <td>A</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Introduction to Computational Biology</td>
+                        <td>A+</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Philosophy of Engineering</td>
+                        <td>A</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Object Oriented Design and Programming</td>
+                        <td>A+</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>General Aptitude</td>
+                        <td>A</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Basic civil and Mechanical Workshop</td>
+                        <td>A</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>National service scheme</td>
+                        <td>A</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Semester III Section -->
+    <div class="semester-section">
+        <div class="semester-header" onclick="toggleSemester('semester3')">
+            <span>Semester III</span>
+            <span>GPA: 9.6</span>
+        </div>
+        <div id="semester3" class="semester-content hidden">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Grade</th>
+                        <th>Credits</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>database management systems</td>
+                        <td>A+</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>computer networks</td>
+                        <td>A+</td>
+                        <td>4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a class="back-button" href="first_web.html">Go Back</a>
+    </div>
+
+    <script>
+        function toggleSemester(semesterId) {
+            var content = document.getElementById(semesterId);
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                content.classList.add('show');
+            } else {
+                content.classList.remove('show');
+                content.classList.add('hidden');
+            }
+        }
+    </script>
+
+</body>
+
+</html>

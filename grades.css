@@ -1,0 +1,140 @@
+body {
+    background-color: #c9f3fe;
+    font-family: 'Times New Roman', Times;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    background-color: #45d4ff;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.student-info {
+    background-color: #98b4f3;
+    width: 80%;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.student-info div {
+    margin-right: 20px;
+}
+
+.student-info h2,
+.student-info h3 {
+    margin: 5px 0;
+}
+
+/* Semester sections */
+.semester-section {
+    width: 80%;
+    background-color: white;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.semester-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: #207398;
+    /* Darker blue */
+    border-radius: 10px;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.semester-header:hover {
+    background-color: #1e90ff;
+}
+
+.semester-content {
+    display: none;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+.semester-content table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.semester-content th,
+.semester-content td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.semester-content th {
+    background-color: #98b4f3;
+    color: black;
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.back-button:hover {
+    background-color: #5dade2;
+}
+
+/* Animation */
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

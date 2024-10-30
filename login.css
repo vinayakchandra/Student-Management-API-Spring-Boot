@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #c9f3fe, #98b4f3);
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 {
+    margin-bottom: 2rem;
+    color: #333;
+    text-align: center;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #777;
+    outline: none;
+    background: transparent;
+    transition: 0.3s;
+}
+
+label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 1rem;
+    color: #777;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -20px;
+    font-size: 0.8rem;
+    color: #45d4ff;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #45d4ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1e90ff;
+}
+
+.footer {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer a {
+    color: #777;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer a:hover {
+    color: #45d4ff;
+}
+
+.input-group.error input {
+    border-color: #ff3860;
+}
+
+.input-group.success input {
+    border-color: #09c372;
+}
+
+.error-message {
+    color: #ff3860;
+    font-size: 0.9rem;
+    height: 13px;
+    margin-top: 5px;
+    display: block;
+}
